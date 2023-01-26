@@ -13,7 +13,7 @@
 }
 
 .descricao {
-  /* line-height:22px; */
+  line-height: 22px;
   padding-right: 1em;
 }
 
@@ -22,7 +22,8 @@
   font-weight: 700;
 }
 
-.descricao__titulo-livro, .descricao__titulo-autora{
+.descricao__titulo-livro,
+.descricao__titulo-autora {
   color: var(--azul);
   font-weight: 700;
   font-size: 18px;
@@ -49,4 +50,41 @@
   font-weight: 700;
   padding: 1em 2.2em;
   text-decoration: none;
+}
+
+.botoes__ancora:active {
+  color: var(--branco) !important;
+  background-color: var(--azul);
+}
+
+.botoes__ancora:hover {
+  color: var(--azul);
+}
+
+@media screen and (min-width: 1024px) {
+  .card {
+    width: 50%;
+    margin: 2em auto;
+  }
+
+}
+
+@media screen and (min-width: 1728px) {
+  .card {
+    width: 40%;
+    margin-top: 6em;
+  }
+
+  .descricao {
+    margin-right: 2em;
+  }
+
+  .descricao__titulo {
+    font-size: 32px;
+    line-height: 48px;
+  }
+
+  .descricao__texto {
+    font-size: 16px;
+  }
 }
